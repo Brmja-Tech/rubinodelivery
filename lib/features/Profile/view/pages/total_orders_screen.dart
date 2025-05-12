@@ -114,6 +114,7 @@ class TotalOrdersScreen extends StatelessWidget {
                             ),
                           ),
                           Expanded(
+                            flex: 2,
                             child: Center(
                               child: Text(
                                 "NumberOrders".tr(),
@@ -142,10 +143,35 @@ class TotalOrdersScreen extends StatelessWidget {
                         ),
                       ),
                       Gap(30.h),
-                      Text(
-                        "CompletedOrders".tr(),
-                        style: context.textTheme.headlineMedium,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Expanded(
+                            child: Container(
+                              // width: MediaQuery.sizeOf(context).width / 3 - 25,
+                              height: 2.h,
+                              color: AppColors.dividerColor,
+                            ),
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Center(
+                              child: Text(
+                                "CompletedOrders".tr(),
+                                style: context.textTheme.headlineMedium,
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Container(
+                              // width: MediaQuery.sizeOf(context).width / 3 - 25,
+                              height: 2.h,
+                              color: AppColors.dividerColor,
+                            ),
+                          ),
+                        ],
                       ),
+                      Gap(30.h),
                     ],
                   ),
                 ),
